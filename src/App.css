@@ -1,38 +1,237 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Noto Serif';
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ================ || HOME STYLE || ================= */
+.homeStyle{
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+.homeStyle div{
+  width: 40%;
+  height: auto;
+  display: flex;
+}
+.homeStyle1{
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  flex-wrap: wrap;
+  color: violet;
+}
+.button{
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  background-color: violet;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width: 1000px) and (min-width:600px) {
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 600px) {
+  .homeStyle{
+    height: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .homeStyle div{
+
+    width: 100%;
   }
+  .homeStyle1{
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+  }
+  .homeStyle1 p{
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+  } 
+  .homeStyle1 button{
+    padding: 0.5rem;  
+    font-size: large;
+  }
+  .homeStyle2{
+    width: 100%;
+  }
+
+  
+}
+
+/* =============== || HEADER STYLE || =================  */
+
+.header_wrapper{
+  background-image: linear-gradient(rgb(253, 132, 253), rgb(154, 0, 154));
+  display: flex;
+  height: 70px;
+  width: 100%;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+}
+
+.header_wrapper img{
+  width: 100px;
+  height: auto;
+}
+
+.navigation{
+  width: 200px;
+  color: white;
+  display: flex;
+}
+.header_wrapper text{
+  font-size: 2.5rem;  
+}
+.header_wrapper p{
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.header_wrapper p:hover{
+  text-decoration: underline;  
+}
+.navicon{
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .header_wrapper{
+    width: 100%;
+  }
+  .header_wrapper text{
+    font-weight: 100;
+    font-size: 1.5rem;
+  }
+  .navigation{
+    display: none;
+  }
+  .header_wrapper p{
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .navicon{
+    cursor: pointer;
+    display: block;
+  }
+}
+/* =============== || TRANSLATED STYLE || ================= */
+
+
+.translator_Box{
+  border: 1px solid rgb(194, 190, 190);
+  border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px lightgray;
+  margin: 2rem;
+}
+.Lang_Box{
+  width:100%;
+  min-height: 450px;
+  overflow: hidden;
+  font-family: 'Noto Serif';
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+.Box-Style{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width:100%;
+  cursor: pointer;
+  min-height: 50px;
+  
+}
+.TextField{
+  background-color: rgb(235, 233, 237);
+  width: 100%;
+  height: 400px;
+  text-align:justify;
+  font-family: Noto Serif;
+  font-size: 1rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  color: rgb(3, 6, 68);
+  padding: 1rem;
+  overflow-y: scroll;
+}
+
+.selectfield{
+  height: 30px;
+  width: 100px;
+}
+
+/* =============== || ABOUT US STYLE || ================ */
+
+.AboutUs_wrap{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.AboutUs_wrap div{
+  width:45%;
+}
+.AboutUs_wrap p{
+  font-size: 1rem;
+  text-align: justify;
+}
+.AboutUs_wrap Button{
+  background-color: violet;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  
+}
+
+/* ============ || ABOUT US RESPONSIVNESS || =============== */
+@media screen and (max-width: 700px) {
+  .AboutUs_wrap div{
+    width: 100%;
+  }
+  .AboutUs_wrap2{
+    font-size: 0.8rem;
+  }
+}
+/* ============== || FOOTER STYLE || =============== */
+
+.FooterStyle{
+  background-image: linear-gradient(rgb(253, 132, 253), rgb(154, 0, 154));
+  padding: 1rem;
+  width: 100%;
+  font-weight: bold;
+}
+.Icons{
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  align-items: center;
+  cursor: pointer;
+}
+.TextStyle{
+  font-weight: 100;
+  font-size: 1rem;
+  color: white;
+  font-size: none;
 }

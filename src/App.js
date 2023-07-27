@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+// ==============|| font used || =================
+// font-family: 'Noto Serif', serif;
+// font-family: 'Yeseva One', cursive;
+
 import './App.css';
+import Header from './components/header/header'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/Home/Home';
+import Aboutus from './components/Aboutus/Aboutus';
+import Translator from './components/Translator/translator';
+import Footer from './components/Footer/Footer';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path= '/'  element={<Home />} />
+          <Route path= '/home'  element={<Home />} />
+          <Route path="/about" element={<Aboutus />}/>
+          <Route path='/translator' element={<Translator />}/>
+          <Route path='*' element={< ErrorPage />}/>
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }

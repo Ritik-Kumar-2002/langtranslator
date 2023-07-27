@@ -1,0 +1,17 @@
+.docu-box{
+    min-height: 50vh;
+    padding:1rem;
+}
+.docu-wrap{
+    border:2px solid black;
+    border-radius: 0.5rem;
+    box-shadow: 6px 6px 15px lightcyan;
+    min-height: 50vh;
+    display: flex;
+    padding:1rem;
+    justify-content: space-evenly;
+}
+.select-field{
+    background-color: rgb(232, 238, 238);
+    width:100%;
+}
