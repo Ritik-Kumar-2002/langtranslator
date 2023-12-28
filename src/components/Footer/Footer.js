@@ -9,8 +9,7 @@ const Footer = () =>{
                 <Grid item lg={6} sm={12} xs={12} md={6}>
                     <p className={"TextStyle"}> Made By </p>
                     <p className={"TextStyle"}> Ritik kumar </p>
-                    <p className={"TextStyle"}> Deeksha Jain </p>
-                    <p className={"TextStyle"}> Contact Us: 123xxxxxxx </p>
+                    <p className={"TextStyle"}> Contact Us: 9389456691 </p>
                 </Grid>
                 <Grid item lg={6} sm={12} xs={12} md={6}>
                     <p className={"TextStyle"}> Follow Us </p>
